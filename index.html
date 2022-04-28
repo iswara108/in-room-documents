@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Raleway:200,400|PT+Mono&display=swap");
+
+  header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+  }
+
+  button#print {
+    width: 100px;
+    height: 60px;
+    border-radius: 20%;
+    box-shadow: none;
+    background-color: #eee;
+    margin: 0 auto;
+    display: block;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+
+  @media print {
+    button#print {
+      display: none;
+    }
+
+    body {
+      margin: .5in auto;
+      font-family: "Raleway", sans-serif;
+      width: 7in;
+      height: 10in;
+    }
+  }
+
+  header img {
+    height:0.5in;
+  }
+
+  main {
+    margin-top: 25px;
+  }
+
+  .prices {font-size: 80%;break-after: page;}
+  
+  .price-table .row {
+    display:grid;
+    grid-template-columns: 3in 3in;
+    align-items:center;
+  }
+
+
+  .prices table tr.room {
+    border-top: 1px solid;
+  }
+
+  .room-price {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0.05in 0.3in;
+  }
+
+  .price-table {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:.2in;
+  }
+
+  .price-table .row:not(:first-of-type) {
+    border-top:1px solid;
+    padding-top:.2in;
+  }
+  
+
+.free-text {
+  display:flex;
+  gap:0.2in;
+}
+
+.free-text .main-offerings{flex-basis: 5in; flex-grow:1; background-color: aqua;padding:0.1in;}
+</style>
+
+<head> </head>
+
+<body>
+  <button id="print">Print</button>
+
+  <header>
+    <img src="./SAYR-logo-2.webp" />
+    <h1>Welcome to the Yoga Retreat</h1>
+    <h2>Accommodation Rates</h2>
+
+    <h3>Winter Season Rates: November 1, 2021 - June 9, 2022 (inclusive)<br>Summer Season Rates: June 10, 2022 - October 31, 2022 (inclusive)</h3>
+  </header>
+  <main>
+    <article class="prices">
+      <div class="price-table">
+        <div class="row">
+          <div class="room-name">Category</div>
+          <div class="room-price">
+            <div class="price-type"></div>
+            <div class="price-winter">Winter</div>
+            <div class="price-summer">Summer</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Beachfront Deluxe Suite</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$400</div>
+            <div class="price-summer">$256</div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$400</div>
+            <div class="price-summer">$320</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Oceanview Deluxe Room</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$390</div>
+            <div class="price-summer">$240</div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$390</div>
+            <div class="price-summer">$300</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Double Bed Room</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$200</div>
+            <div class="price-summer">$142</div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$270</div>
+            <div class="price-summer">$190</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Single Room</div>
+          <div class="room-price">
+            <div class="price-type"></div>
+            <div class="price-winter">$157</div>
+            <div class="price-summer">$128</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Beach Hut</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$220</div>
+            <div class="price-summer">$170</div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$280</div>
+            <div class="price-summer">$210</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Twin Bed Room</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$199</div>
+            <div class="price-summer">$160</div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$256</div>
+            <div class="price-summer">$190</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Tent Hut Double Bed</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$128</div>
+            <div class="price-summer"></div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$180</div>
+            <div class="price-summer"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Tent Hut Single</div>
+          <div class="room-price">
+            <div class="price-type"></div>
+            <div class="price-winter">$110</div>
+            <div class="price-summer"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Tent Space</div>
+          <div class="room-price">
+            <div class="price-type"></div>
+            <div class="price-winter">$65</div>
+            <div class="price-summer"></div>
+          </div>
+        </div>
+      </div>
+      <p>Add 10% VAT to the accommodation rate.</p>
+    </article>
+    <article class="free-text">
+      <section class="main-offerings">
+        <h4>Yoga Vacations</h4>
+        <p>
+          Our all-inclusive accommodation rates include meals, yoga classes,
+          satsangs, and daily Yoga Vacation workshops, as well as access to
+          our beautiful beach and the ashram grounds and amenities.
+        </p>
+        <h4>Course Tuitions</h4>
+        <p>
+          Our courses, cleanses, and trainings have tuitions; see our catalog
+          or website for tuition amount for a specific program. Add
+          accommodations.
+        </p>
+      </section>
+      <section class="check-in-out-policies">
+        <h4>Check-in and Check-out Policy</h4>
+        <p>Check-in time: 15:00</p>
+        <p>
+          Check-out time: 11:00 Please check out at the front desk and return
+          your key.
+        </p>
+        <p>
+          Departure: Please register at the front desk 24 hours in advance for
+          a boat and taxi to the airport.
+        </p>
+
+        <h4>Late check-outs</h4>
+        <p>
+          Late check-outs need to be coordinated with the front desk a day in
+          advance and will be confirmed upon availability. <br />
+          Check out between 11:00 - 15:00 requires an additional payment of
+          $25. Check outs after 15:00 will be charged a full night. <br />
+          If you have a late departure, you may leave your luggage next to the
+          front desk until you leave.
+        </p>
+      </section>
+    </article>
+    <hr>
+    <article>
+      <h4>Section 3 of the Hotel Keepers Act</h4>
+      <p>
+        From and after the coming into operation of this Act, no hotel keeper shall be liable to make good to any guest
+        of such hotel keeper any
+        loss of, or injury to, goods brought to his hotel, to a greater amount than the sum of four hundred dollars,
+        except:</p>
+      <ol type="a">
+        <li>where such goods are stolen, lost or injured through the wilful act, default or negligence of such hotel
+          keeper, or any servant in his
+          employ; or</li>
+        <li>where such goods are deposited expressly for safe custody with such hotel keeper:
+          Provided that in the case of such deposit it shall be a condition precedent of the liability of the hotel
+          keeper that the guest affecting the
+          deposit shall at the time thereof:
+          <ol type="i">
+            <li>make and sign a written declaration as to the nature and value of the goods deposited;</li>
+            <li>permit the hotel keeper by himself, his servant or agent to inspect such goods; and</li>
+            <li>if so required by the hotel keeper, deposit such goods in a box or other receptacle fastened and sealed
+              by such guest.</li>
+          </ol>
+        </li>
+      </ol>
+      </p>
+    </article>
+  </main>
+  <footer></footer>
+
+  <script>
+    const printButton = document.querySelector("#print");
+    if (printButton) printButton.addEventListener("click", () => print());
+  </script>
+</body>
+
+</html>
