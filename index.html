@@ -8,6 +8,16 @@
     font-size: 0.9rem;
   }
 
+  h1 {text-align: center;}
+
+  h2 {
+    font-size:1.2rem;
+  }
+
+  h3 {
+    margin-top: 0.1rem;
+  }
+
   button#print {
     width: 100px;
     height: 60px;
@@ -67,12 +77,12 @@
     display:flex;
     flex-direction: column;
     align-items:center;
-    gap:.2in;
+    gap:.1in;
   }
 
   .price-table .row:not(:first-of-type) {
     border-top:1px solid;
-    padding-top:.2in;
+    padding-top:.1in;
   }
   
 
@@ -94,7 +104,11 @@
     <h1>Welcome to the Yoga Retreat</h1>
     <h2>Accommodation Rates</h2>
 
-    <h3>Winter Season Rates: November 1, 2021 - June 9, 2022 (inclusive)<br>Summer Season Rates: June 10, 2022 - October 31, 2022 (inclusive)</h3>
+    <h3>
+      Summer Season Rates: June 10, 2022 - October 31, 2022 (inclusive)
+      <br>
+      Winter Season Rates: November 1, 2022 - June 9, 2023 (inclusive)
+    </h3>
   </header>
   <main>
     <article class="prices">
@@ -111,10 +125,10 @@
           <div class="room-name">Beachfront Deluxe Suite</div>
           <div class="room-price">
             <div class="price-type">Single</div>
-            <div class="price-winter">$400</div>
+            <div class="price-winter">$490</div>
             <div class="price-summer">$256</div>
             <div class="price-type">Double</div>
-            <div class="price-winter">$400</div>
+            <div class="price-winter">$490</div>
             <div class="price-summer">$320</div>
           </div>
         </div>
@@ -122,21 +136,32 @@
           <div class="room-name">Oceanview Deluxe Room</div>
           <div class="room-price">
             <div class="price-type">Single</div>
-            <div class="price-winter">$390</div>
+            <div class="price-winter">$450</div>
             <div class="price-summer">$240</div>
             <div class="price-type">Double</div>
-            <div class="price-winter">$390</div>
+            <div class="price-winter">$450</div>
             <div class="price-summer">$300</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Spacious Double Bed Room</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$270</div>
+            <div class="price-summer">$142</div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$300</div>
+            <div class="price-summer">$190</div>
           </div>
         </div>
         <div class="row">
           <div class="room-name">Double Bed Room</div>
           <div class="room-price">
             <div class="price-type">Single</div>
-            <div class="price-winter">$200</div>
+            <div class="price-winter">$250</div>
             <div class="price-summer">$142</div>
             <div class="price-type">Double</div>
-            <div class="price-winter">$270</div>
+            <div class="price-winter">$290</div>
             <div class="price-summer">$190</div>
           </div>
         </div>
@@ -144,18 +169,29 @@
           <div class="room-name">Single Room</div>
           <div class="room-price">
             <div class="price-type"></div>
-            <div class="price-winter">$157</div>
+            <div class="price-winter">$200</div>
             <div class="price-summer">$128</div>
           </div>
         </div>
         <div class="row">
-          <div class="room-name">Beach Hut</div>
+          <div class="room-name">Beach Hut East</div>
           <div class="room-price">
             <div class="price-type">Single</div>
-            <div class="price-winter">$220</div>
+            <div class="price-winter">$260</div>
             <div class="price-summer">$170</div>
             <div class="price-type">Double</div>
-            <div class="price-winter">$280</div>
+            <div class="price-winter">$320</div>
+            <div class="price-summer">$210</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="room-name">Beach Hut West</div>
+          <div class="room-price">
+            <div class="price-type">Single</div>
+            <div class="price-winter">$240</div>
+            <div class="price-summer">$170</div>
+            <div class="price-type">Double</div>
+            <div class="price-winter">$300</div>
             <div class="price-summer">$210</div>
           </div>
         </div>

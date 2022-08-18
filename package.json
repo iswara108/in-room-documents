@@ -1,8 +1,4 @@
 {
-  "devDependencies": {
-    "livereload": "^0.9.3"
-  },
-  "dependencies": {
-    "browser-sync": "^2.27.9"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }
